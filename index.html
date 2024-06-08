@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sony Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="javascript" href="sony.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="#">Sony</a>
+      </div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#specs">Specs and Features</a></li>
+        <li><a href="#overview">Product Overview</a></li>
+        <li><a href="#photos">Sample Photos</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <img src="moon.png" id="moon">
+        <script>
+          var moon = document.getElementById("moon");
+          moon.onclick = function () {
+            document.body.classList.toggle("darkmode");
+            if (document.body.classList.contains("darkmode")) {
+              moon.src = "moon.png";
+              moon.style.background = "#fff";
+            }
+            else {
+              moon.src = "sun.png";
+              moon.style.background = "#1b1b1b";
+            }
+          }
+        </script>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="img"></div>
+    <div class="center">
+      <div class="title">Sony &alpha;7 II</div>
+      <div class="sub_title">The power of one frame</div>
+    </div>
+  </section>
+  <section id="specs" class="specification">
+    <h2>Specifications and Features</h2>
+    <div class="specs">
+      <img src="size.png" alt="">
+      <dl>
+        <dt>Number of Pixels</dt>
+        <dd>25.2 megapixels</dd><br>
+        <dt>SENSOR TYPE</dt>
+        <dd>35 mm full frame (35.6 x 23.8 mm), Exmor RS CMOS sensor</dd><br>
+        <dt>ISO SENSITIVITY</dt>
+        <dd>Still images: ISO 250–25600, <br>Movies: ISO 250–25600 equivalent.</dd><br>
+        <dt>MONITOR TYPE</dt>
+        <dd>8.0 cm (3.2-type) type TFT</dd><br>
+        <dt>MEMORY CARD SLOT</dt>
+        <dd>SLOT1: Multi slot for SD (UHS-I/II compliant) memory card / CFexpress Type A card.</dd><br>
+        <dt>FOCUS TYPE</dt>
+        <dd>Fast Hybrid AF (phase-detection AF / contrast-detection AF)</dd><br>
+      </dl>
+    </div>
+  </section>
+
+  <section id="overview" class="prooverview">
+    <h2>Product Overview</h2>
+    <div class="procontainer">
+      <div class="overview">
+        <img src="overview1.png" alt="">
+        <h3>Robust and durable</h3>
+        <p>With lightweight, the frame is made up of high-rigidity and high-quality magnesium alloy for its top cover,
+          front cover, internal frame, and rear cover, the α9 III boasts high body durability, high shock resistance and
+          effective heat dissipation. It's built to withstand challenging professional environments while remaining
+          relatively compact and lightweight.</p>
+      </div>
+      <div class="overview">
+        <img src="overview2.png" alt="">
+        <h3>Two CFexpress Type A compatible media slots</h3>
+        <p>As well as UHS-I and UHS-II SD cards. These are ideally suited to high-speed continuous still shooting at up
+          to 120fps5 and provide high write speeds that quickly clear the buffers of cameras that generate high volumes
+          of still image and movie data. Users can save data to different media slots according to file type, image
+          size, and image quality, streamlining workflow.</p>
+      </div>
+    </div>
+    <div class="procontainer">
+      <div class="overview">
+        <img src="overview3.png" alt="">
+        <h3>Optional VG-C5 Vertical Grip</h3>
+        <p>The optional VG-C5 Vertical Grip provides outstanding comfort and operability for long shooting sessions. The
+          grip and shutter button feature the same ergonomic design as the camera body. Control access is similar too,
+          with an independent front custom button (C5), a front dial, rear L and R dials, and a lock function on the R
+          dial. The VG-C5 Vertical Grip can house two NP-FZ100 batteries for extended shooting sessions.
+        </p>
+      </div>
+      <div class="overview">
+        <img src="overview4.png" alt="">
+        <h3>Built-in Wi-Fi for Transfering Files</h3>
+        <p>Built-in Wi-Fi (IEEE 802.11ac) with 2x2 MIMO support allows high-speed data transfer, enabling the α9 III to
+          transfer data up to twice as fast as its predecessor. 5 GHz29 communication offers maximum speed and
+          stability, essential for news and sports shooters who need to deliver immediately. The simple in-camera
+          interface makes it easy to transfer still and movie data via an FTP server, Wi-Fi, fast-wired LAN, or USB
+          tethering with a smartphone.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="photos" class="image">
+    <h2>Sample Photos</h2>
+    <div class="sample1">
+      <img src="sample3.png" alt="">
+      <div class="sample-text">
+        <h3>Blackout-free, 120fps continuous shooting</h3>
+        <p>The &alpha;9 III is defined by speed and accuracy, <span id="hide"> enabling it to capture decisive moments
+            with ease. It's capable of shooting continuous bursts at up to 120fps with full AF/AE tracking5, all without
+            viewfinder blackout, and its highly advanced AI processing unit recognises subjects with astonishingly high
+            precision and reliability.</span></p>
+        <button onclick="myfun3()">Read More</button>
+      </div>
+    </div>
+    <div class="sample1">
+      <div class="sample-text">
+        <h3>Preserve split-second moments</h3>
+        <p>At 1/80000 second4, the maximum shutter speed of the α9 III makes <span id="hide1">it easy to capture
+            fast-moving subjects in almost any situation. What's more, a compatible flash unit from Sony (such as the
+            HVL-F60RM2 or HVL-F46RM)6 can synchronise at all shutter speeds, eliminating the steep, nonlinear drop-off
+            in illumination that occurs with high-speed sync (HSS) and ensuring even illumination across the
+            image.</span></p>
+        <button onclick="myfun4()">Read More</button>
+      </div>
+      <img src="sample2.png" alt="">
+    </div>
+    <div class="sample1">
+      <img src="sample1.png" alt="">
+      <div class="sample-text">
+        <h3>Never miss a moment with <br>Pre-Capture</h3>
+        <p>Pre-Capture records the moments that occurred before the shutter was released. <span id="hide2">Settable from
+            0.005 to 1 second13, it's available in any file format up to 120fps5 with full AF/AE tracking. This makes it
+            easier to capture split-second moments, such as images of birds taking flight, even if actual shutter
+            release is a little late.</span></p>
+        <button onclick="myfun5()">Read More</button>
+      </div>
+    </div>
+    <script>
+      var hide = document.getElementById("hide");
+      var display = 0;
+      function myfun3() {
+        if (display == 1) {
+          hide.style.visibility = "visible";
+          display = 0;
+        }
+        else {
+          hide.style.visibility = "hidden";
+          display = 1;
+        }
+      }
+      var hide1 = document.getElementById("hide1");
+      var display = 0;
+      function myfun4() {
+        if (display == 1) {
+          hide1.style.visibility = "visible";
+          display = 0;
+        }
+        else {
+          hide1.style.visibility = "hidden";
+          display = 1;
+        }
+      }
+      var hide2 = document.getElementById("hide2");
+      var display = 0;
+      function myfun5() {
+        if (display == 1) {
+          hide2.style.visibility = "visible";
+          display = 0;
+        }
+        else {
+          hide2.style.visibility = "hidden";
+          display = 1;
+        }
+      }
+    </script>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Related Products</h2>
+    <div class="container">
+      <div class="product">
+        <img src="24lens.png" alt="Camera 1">
+        <h3>Sony FE 24-70 mm F2.8 GM Lens</h3>
+        <p>Rs. 199,900/-</p>
+        <button onclick="window.open('https://www.sony.co.in/lenses/products/sel2470gm2?locale=en_IN','_blank')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="70lens.png" alt="Camera 2">
+        <h3>Sony FE 70-200 mm F2.8 GM Lens</h3>
+        <p>Rs. 244,900/-</p>
+        <button onclick="window.open('https://www.sony.co.in/lenses/products/sel70200gm2?locale=en_IN','_blank')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="100lens.png" alt="Camera 2">
+        <h3>Sony 100-400 mm GM Zoom lens</h3>
+        <p>Rs. 229,490/-</p>
+        <button onclick="window.open('https://www.sony.co.in/electronics/camera-lenses/sel100400gm','_blank')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product">
+        <img src="battery.png" alt="Camera 2">
+        <h3>Sony Z-series Battery</h3>
+        <p>Rs. 5,890/-</p>
+        <button onclick="window.open('https://www.sony.co.in/electronics/interchangeable-lens-cameras-batteries-chargers/np-fz100','_blank')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="charger.png" alt="Camera 2">
+        <h3>Sony Multi Battery Adaptor Kit</h3>
+        <p>Rs. 30,390/-</p>
+        <button onclick="window.open('https://www.sony.co.in/electronics/interchangeable-lens-cameras-batteries-chargers/npa-mqz1k','_blank')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="sdcard.png" alt="Camera 2">
+        <h3>Sony TOUGH series SD Card</h3>
+        <p>Rs. 14,340/-</p>
+        <button onclick="window.open('https://www.sony.co.in/electronics/sd-cards/sf-gt-series','_blank')">Add to Cart</button>
+      </div>
+    </div>
+    <div class="container">
+      <div class="product">
+        <img src="grip.png" alt="Camera 2">
+        <h3>Sony Vertical Grip</h3>
+        <p>Rs. 39,990/-</p>
+        <button onclick="window.open('https://www.sony.co.in/electronics/interchangeable-lens-cameras-vertical-grips/vg-c5','_blank')">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="mic.png" alt="Camera 2">
+        <h3>Sony Wireless Microphone</h3>
+        <p>Rs. 13,990/-</p>
+        <button onclick="window.open('https://www.sony.co.in/camera-accessories/products/ecm-w2bt?locale=en_IN&cid=pr-in-21992','_blank')">Add to Cart</button>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <h2 class="review">Detailed Product Review</h2>
+  <div class="youtube">
+    <iframe width="660" height="415" src="https://www.youtube.com/embed/3gCKcq4THNQ?si=qlTjwO1fNC8j6tpi"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div><hr>
+
+  <section id="contact" class="contact">
+    <div class="form">
+      <h1>Contact us</h1>
+      <p>Fill out your information and <br>Sony representative will reach out to you.</p>
+      <form action="#home" onsubmit="myfun6()">
+        <label for="uname">Name :</label> <br>
+        <input style="width: 350px;padding: 8px;" type="text" id="uname" placeholder="Name" required><br><br>
+
+        <label for="phoneno">Phone Number : </label><br>
+        <input style="width: 350px;padding: 8px;" type="tel" name="phoneno" onkeyup="this.value=this.value.replace(/[0-9-]/g,"); maxlength="10" placeholder="Phone Number" required><br><br>
+
+        <label for="e-mail">E-mail :</label><br>
+        <input style="width: 350px;padding: 8px;" type="text" name="e-mail" placeholder="E-mail" required><br><br>
+
+        <label for="country">Country :</label><br>
+        <select style="width: 350px;padding: 8px;" name="country">
+          <option value="country"> -- Select your Country -- </option>
+          <option value="India">India</option>
+          <option value="Russia">Russia</option>
+          <option value="USA">USA</option>
+          <option value="Europe">Europe</option>
+          <option value="China">China</option>
+          <option value="Japan">Japan</option>
+        </select><br><br>
+
+        <label for="pincode">Pincode :</label><br>
+        <input style="width: 350px;padding: 8px;" type="number" name="pincode" placeholder="Pincode"><br>
+
+        <div class="pro-btn">
+          <input class="submit" type="submit" value="Submit">
+          <input class="reset" type="reset" value="Reset">
+      </form>
+      <script>
+        function myfun6(){
+          alert("You have Registered Successfully");
+        }
+      </script>
+    </div>
+  </div>
+    <div class="locate">
+      <h1>Locate us</h1>
+      <p>Find our Store near you</p>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15592.911856577994!2d76.62352188715819!3d12.300429299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7af3265203a3%3A0xd02186e965533849!2sSony%20Center%20-%20Sona%20Electronics!5e0!3m2!1sen!2sin!4v1712853460389!5m2!1sen!2sin"width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section><hr>
+
+  <footer class="footer">
+      <ul>
+        <li><a href="https://www.sony.co.in/microsite/careers/?cid=gwt:footer:career" target="_blank">Careers</a></li>
+        <li><a href="https://locator.sony/en_IN/servicecenters/?cpint=gwt%3Afooter%3Ac1%3Asupport%3Aservicecentres%3Aen&zoom=6&latitude=23.483401&longitude=79.804688" target="_blank">Locate Service Centers</a></li>
+        <li><a href="https://www.sony.co.in/microsite/termsofuse/?cid=gwt:footer:terms" target="_blank">Terms and Conditions</a></li>
+        <li><a href="https://www.sony.co.in/microsite/privacypolicy/?cid=gwt:footer:privacy" target="_blank">Privacy Policy</a></li>
+        <li><a href="https://www.sony.co.in/microsite/corporate/?cid=gwt:footer:info" target="_blank">Company info</a></li>
+      </ul>
+      <div class="social">
+        <h3>Follow us on Social Media</h3>
+        <ul>
+          <li> <a href="https://www.facebook.com/SonyIndia" target="_blank" class="fa-brands fa-facebook"></a></li>
+          <li><a href="https://www.instagram.com/sonyindiaofficial" target="_blank" class="fa-brands fa-instagram"></a>
+          </li>
+          <li><a href="https://www.sony.co.in/electronics/interchangeable-lens-cameras/ilce-9m3#" target="_blank"
+              class="fa-brands fa-google"></a>
+          </li>
+          <li><a href="https://twitter.com/sony_india" target="_blank" class="fa-brands fa-twitter"></a></li>
+          <li><a href="https://www.youtube.com/@ImagingbySony" target="_blank" class="fa-brands fa-youtube"></a></li>
+        </ul>
+  </footer>
+  <p class="Copyright">Copyright &copy; 2024 Sony India. All rights reserved</p>
+  </div>
+  <a class="gotopbtn" href="#home"><i class="fa fa-arrow-up"></i></a>
+</body>
+</html>
